@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserCode | Js | 51</title>
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <form id="msform">
+      <fieldset id="createAccount">
+        <h2 class="fs-title">Create your account</h2>
+        <input type="text" placeholder="UserName" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <input type="button" class="next action-button" value="Create" />
+        <input type="button" class="next action-button" onclick="showloginForm()" value="login" style="background-color: rgb(211, 86, 86);"/>
+      </fieldset>
+      <fieldset id="login">
+        <h2 class="fs-title">Login</h2>
+        <input type="text" placeholder="UserName" />
+        <input type="text" placeholder="Password" />
+        <input type="button" class="previous action-button" value="Login" />
+        <input
+          style="background-color: rgb(211, 86, 86);"
+          type="button"
+          class="action-button"
+          value="Create Acc"
+          onclick="showCreateAccountForm()"
+        />
+      </fieldset>
+    </form>
+    <script src="account.js"></script>
+  </body>
+</html>
